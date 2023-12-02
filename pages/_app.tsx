@@ -7,7 +7,7 @@ const font = IBM_Plex_Sans_Thai({
 
 import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: any) {
   return (
     <main className={font.className}>
       <Component {...pageProps} />

@@ -13,12 +13,13 @@ export default function Home(): JSX.Element {
         <div className="bg-white drop-shadow-xl rounded-xl xl:w-72 h-[500px] overflow-hidden p-8 space-y-1">
           <div className="pt-2.5">
             <Image
+              priority
               className="transform hover:scale-150 object-contain duration-300 w-40 rounded-md mx-auto cursor-pointer"
               src={"/profile.jpg"}
               width={2000}
               height={2000}
               alt={"Profile"}
-            ></Image>
+            />
           </div>
           <div className="text-center">
             <h1 className="text-4xl">Ammarin</h1>
