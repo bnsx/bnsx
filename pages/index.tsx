@@ -10,8 +10,8 @@ export default function Home(): JSX.Element {
         <title>My Profile</title>
       </Head>
       <div className="w-full h-screen flex justify-center items-center px-5">
-        <div className="bg-white drop-shadow-xl rounded-xl xl:w-72 h-[500px] overflow-hidden p-8 space-y-1">
-          <div className="pt-2.5">
+        <div className="bg-white drop-shadow-xl rounded-xl xl:w-72 h-[500px] overflow-hidden p-10 space-y-1">
+          <div className="m-5">
             <Image
               priority={true}
               className="transform hover:scale-150 object-contain duration-300 w-40 rounded-full mx-auto cursor-pointer"
