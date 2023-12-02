@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
           <div className="mt-5">
             <Image
               className="transform hover:scale-150 duration-300 w-40 h-40 rounded-full mx-auto cursor-pointer"
-              src={"/profile.png"}
+              src={"/profile.jpg"}
               width={2000}
               height={2000}
               alt={"Profile"}
