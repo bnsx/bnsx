@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
           <div className="pt-2.5">
             <Image
               priority
-              className="transform hover:scale-150 object-contain duration-300 w-40 rounded-md mx-auto cursor-pointer"
+              className="transform hover:scale-150 object-contain duration-300 w-40 rounded-full mx-auto cursor-pointer"
               src={"/profile.jpg"}
               width={2000}
               height={2000}
