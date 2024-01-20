@@ -1,16 +1,19 @@
 import "@/styles/globals.css";
 import { IBM_Plex_Sans_Thai } from "next/font/google";
+import { QueryClient, QueryClientProvider } from "react-query";
 const font = IBM_Plex_Sans_Thai({
   subsets: ["latin", "thai"],
   weight: ["100", "200", "300", "500", "700"],
 });
 
-import type { AppProps } from "next/app";
+const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }: any) {
   return (
     <main className={font.className}>
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+      </QueryClientProvider>
     </main>
   );
 }
